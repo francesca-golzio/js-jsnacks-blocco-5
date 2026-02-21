@@ -21,3 +21,8 @@ const students = [
 
 // Recupera i dati dello studente con id 2
 // Risultato: { id: 2, name: 'Mario Banfi', age: 34, class: '4A' }
+
+const requestedStudent = students[1];
+console.log(requestedStudent);
+
+// 🤔 questo snack sembra troppo facile...
