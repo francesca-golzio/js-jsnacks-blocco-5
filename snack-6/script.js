@@ -1,3 +1,5 @@
+console.log('🌿');
+
 const zucchine = [
   { type: 'Napoletana', weight: 10, length: 4 },
   { type: 'Trombetta', weight: 13, length: 16 },
@@ -12,3 +14,24 @@ const zucchine = [
 ];
 
 // A partire dall'array fornito, crea due array. Uno con le zucchine più lunghe di almeno 15cm. L'altro con le restanti.
+
+/* 1 _ primo array: zucchine più lunghe di almeno 15cm */
+
+  /* const longerThan15 = zucchine.filter(function(zucchina){
+    console.log(zucchina.length);
+  return zucchina.length >= 15
+  });
+  console.log(longerThan15); */
+
+  // 👇 versione breve di 👆
+  let longerThan15 = zucchine.filter((zucchina) => zucchina.length >= 15);
+  console.log(longerThan15);
+  
+  /* 2 _ secondo array: zucchine restanti */
+  
+  // FORSE BISOGNEREBBE USARE 👉 "...rest", ⚠️ MA NON LO CAPISCO PROPRIO
+
+    // 👇 soluzione alternativa
+    let unpickedZucchine = zucchine.filter((zucchina) => zucchina.length < 15);
+    console.log(unpickedZucchine);
+
