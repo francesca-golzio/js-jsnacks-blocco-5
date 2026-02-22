@@ -23,7 +23,7 @@ const students = [
 // Risultato: '3C'
 
 const lanciClass = students[0].class;
-//console.log(lanciClass);
+console.log(lanciClass);
 
 // 🍬 easy peasy
 // Anche se, forse dovrei usare un metodo...
