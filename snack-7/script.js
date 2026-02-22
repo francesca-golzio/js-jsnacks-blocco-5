@@ -26,3 +26,7 @@ const requestedStudent = students[1];
 console.log(requestedStudent);
 
 // 🤔 questo snack sembra troppo facile...
+
+// ... e infatti si poteva fare anche così 👇 con .find()
+const requestedStudent2 = students.find((studente) => studente.id === 2);
+console.log(requestedStudent2);
